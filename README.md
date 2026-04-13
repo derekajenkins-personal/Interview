@@ -7,6 +7,7 @@ A self-contained Laravel + React/MUI starter repo for interview candidates.
 ## Prerequisites
 
 - [Docker](https://docs.docker.com/get-docker/) with Compose v2
+- Ports **8000** (app) and **8080** (Adminer) must be available on your machine
 
 ## Setup
 
