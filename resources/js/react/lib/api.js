@@ -34,4 +34,10 @@ export const api = {
     createTask: (data) => request("POST", "/tasks", data),
     updateTask: (id, data) => request("PATCH", `/tasks/${id}`, data),
     deleteTask: (id) => request("DELETE", `/tasks/${id}`),
+    // Ideas
+    getIdeas: () => request("GET", "/ideas"),    
+    getImprovementTypes: () => request("GET", "/ideas/improvement-types"),
+    submitIdea: (data) => request("POST", "/ideas", data),
+    upvoteIdea: (id) => request("PATCH", `/ideas/${id}/upvote`),
+    downvoteIdea: (id) => request("PATCH", `/ideas/${id}/downvote`),
 };
