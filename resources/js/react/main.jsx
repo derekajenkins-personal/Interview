@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import App from "./App";
 import Tasks from "./pages/Tasks";
+import Ideas from "./pages/Ideas";
 import AppThemeProvider from "./theme/AppThemeProvider";
 
 const rootElement = document.getElementById("root");
@@ -26,6 +27,7 @@ if (rootElement) {
                     <Routes>
                         <Route path="/" element={<App />}>
                             <Route index element={<Tasks />} />
+                            <Route path="ideas" element={<Ideas />} />
                         </Route>
                     </Routes>
                 </BrowserRouter>
