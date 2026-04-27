@@ -9,8 +9,6 @@ import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import { useContext } from "react";
 import { Outlet } from "react-router-dom";
-import Button from "@mui/material/Button";
-import { Link as RouterLink } from "react-router-dom";
 
 import { ColorModeContext } from "./theme/ColorModeContext";
 
@@ -31,22 +29,6 @@ export default function App() {
                     <Typography variant="h6" sx={{ flexGrow: 1 }}>
                         Interview Starter
                     </Typography>
-                    <Button
-                        component={RouterLink}
-                        to="/"
-                        color="inherit"
-                        variant="text"
-                    >    
-                        Tasks
-                    </Button>                    
-                    <Button
-                        component={RouterLink}
-                        to="/ideas"
-                        color="inherit"
-                        variant="text"
-                    >
-                        Feedback
-                    </Button>
                     <Tooltip
                         title={`Switch to ${mode === "light" ? "dark" : "light"} mode`}
                     >
